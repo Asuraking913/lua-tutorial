@@ -1,10 +1,10 @@
-Message = 0
-while Message < 10 do
-    Message = Message + 1
-    -- print("Hello world")
-end
-formatted = ('Hello %s World, Iteration %s')
-for i =0, 10, 1 do
-    print(string.format(formatted, 'Its my', i))
+
+function IncreaseVar(params)
+    local target_var = 3
+    target_var = target_var + params
+    return target_var
 end
 
+result = IncreaseVar(4)
+
+print(result)
